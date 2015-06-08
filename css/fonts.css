@@ -1,0 +1,101 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none !important;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-cart, .icon-home, .icon-facebook, .icon-twitter, .icon-skype, .icon-paypal, .icon-plus, .icon-mobile, .icon-tag, .icon-star, .icon-tag-2, .icon-credit, .icon-quill, .icon-tank, .icon-shipping, .icon-toast, .icon-ilias-ismanalijev-batman, .icon-calendar, .icon-atom {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-cart:before {
+	content: "\21";
+}
+.icon-home:before {
+	content: "\22";
+}
+.icon-facebook:before {
+	content: "\23";
+}
+.icon-twitter:before {
+	content: "\24";
+}
+.icon-skype:before {
+	content: "\25";
+}
+.icon-paypal:before {
+	content: "\26";
+}
+.icon-plus:before {
+	content: "\27";
+}
+.icon-envelop:before {
+	content: "\28";
+}
+.icon-mobile:before {
+	content: "\29";
+}
+.icon-tag:before {
+	content: "\2a";
+}
+.icon-star:before {
+	content: "\2b";
+}
+.icon-tag-2:before {
+	content: "\2c";
+}
+.icon-credit:before {
+	content: "\2d";
+}
+.icon-quill:before {
+	content: "\2e";
+}
+.icon-tank:before {
+	content: "\2f";
+}
+.icon-shipping:before {
+	content: "\30";
+}
+.icon-toast:before {
+	content: "\31";
+}
+.icon-ilias-ismanalijev-batman:before {
+	content: "\32";
+}
+.icon-calendar:before {
+	content: "\33";
+}
+.icon-atom:before {
+	content: "\34";
+}

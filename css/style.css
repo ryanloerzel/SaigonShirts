@@ -1,0 +1,752 @@
+
+/* importing an icon font used for the shopping cart, facebook, and twitter icons*/
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class*="icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-calendar:before {
+	content: "\e600";
+}
+.icon-checkmark:before {
+	content: "\e601";
+}
+.icon-cancel:before {
+	content: "\e602";
+}
+.icon-checkmark2:before {
+	content: "\e603";
+}
+.icon-notice:before {
+	content: "\e604";
+}
+.icon-box:before {
+	content: "\e605";
+}
+.icon-bike:before {
+	content: "\e606";
+}
+.icon-plane:before {
+	content: "\e607";
+}
+.icon-shipping:before {
+	content: "\e608";
+}
+.icon-basket:before {
+	content: "\e609";
+}
+.icon-magnifier:before {
+	content: "\e610";
+}
+.icon-envelope:before {
+	content: "\e611";
+}
+.icon-mobile:before {
+	content: "\e60a";
+}
+.icon-tag:before {
+	content: "\e60b";
+}
+.icon-facebook:before {
+	content: "\e60c";
+}
+.icon-twitter:before {
+	content: "\e60d";
+}
+.icon-paypal:before {
+	content: "\e60e";
+}
+.icon-spinner:before {
+	content: "\e612";
+}
+.icon-bubbles:before {
+	content: "\e613";
+}
+.icon-gift:before {
+	content: "\e614";
+}
+.icon-search:before {
+	content: "\e615";
+}
+.icon-quotes-left:before {
+	content: "\e616";
+}
+.icon-earth:before {
+	content: "\e617";
+}
+.icon-star:before {
+	content: "\e618";
+}
+.icon-lightning:before {
+	content: "\e619";
+}
+.icon-checkmark:before {
+	content: "\e61a";
+}
+.icon-checkmark-circle:before {
+	content: "\e61b";
+}
+.icon-cancel-circle:before {
+	content: "\e61c";
+}
+.icon-close:before {
+	content: "\e61d";
+}
+.icon-IcoMoon:before {
+	content: "\e61e";
+}
+.icon-code:before {
+	content: "\e61f";
+}
+.icon-mail:before {
+	content: "\e620";
+}
+.icon-envelop:before {
+	content: "\e621";
+}
+.icon-credit:before {
+	content: "\e622";
+}
+.icon-thumbs-up:before {
+	content: "\e60f";
+}
+
+
+/*Clear any preset margins or padding*/
+html *{margin:0; padding:0;
+/*
+	border: dashed 1px black;*/
+}
+
+html {overflow-x: hidden;}
+
+/* keep the content width fixed at 960px */
+.container {width: 95%; max-width: 960px; margin: auto; min-width:645px; }/*/
+
+/*A brick textured background for all pages*/
+body {
+	background-image:url('../img/textures/brickwall.png'); 	
+	font-family: 'Oswald', sans-serif; 
+	position:relative;
+}
+
+/*STICKY FOOTER HACK:http://ryanfait.com/resources/footer-stick-to-bottom-of-page/==
+==================================================================================*/
+	    * {
+	    margin: 0;
+	    }
+	    html, body {
+	    height: 100%;
+	    }
+	    .wrapper {
+	    min-height: 100%;
+	    height: auto !important;
+	    height: 100%;
+	    margin: 0 auto -4em;
+	    background-image:url('../img/textures/brickwall.png'); /*ADDED TO MATCH BACKGROUND*/
+	    }
+	    .push {
+	    height: 4em;
+	    }
+/*STICKY FOOTER HACK==============================================================
+==================================================================================*/
+
+
+h1, h2 {
+	display: block;
+	width:100%;
+	margin: auto 0;
+	letter-spacing: 0.046875em;
+	font-size: 1.5em;
+	font-weight: normal;
+	text-align: center;
+    color:  #c1c1c1;
+    text-transform: uppercase;
+    text-shadow: 0px 1px #fff, 0px -1px #777;
+ }
+
+/*underlines the the current page*/
+p {color:#717171;}
+ .on span{text-decoration: underline;} 
+ header a, .banner p{color: #ffcb01;}
+ .contact_page h1, .shirts_page h1, .latest_shirts h1, .search_page h1 {margin-top: 1em;margin-bottom: 1em;}
+.latest_shirts, .shirts_page {padding-bottom: 1em;}
+
+/*===============================================================================================================
+=================================================================================================================
+#################################################################################################################
+=================================================================================================================
+#################################################################################################################
+=================================================================================================================
+################################################################################################################*/
+
+/*---------------------------HEADER STYLING----------------------------
+-----------------------------------------------------------------------*/
+header * {position:relative;}
+header {
+
+	height: 90px; 
+	background: rgba(234, 33, 36, 1); 
+	border-bottom:  solid #991518 5px; 
+	border-top:  solid #991518 1px; 
+	box-shadow: 1px 2px 2px black;
+	width: 100%;
+	position: relative;
+
+}
+header .container{ height: 100px; width: 100%;}
+
+header .container #logo {
+	float: left;
+	width: 38.54166% ;
+	height:90px;
+	z-index: 100; 
+}
+
+
+header .container #logo img {width: 100%; height: 90px;}
+
+header nav {float: right; margin-top: 34px; width:50%; 	padding-right: 1%;} /*width 480px*/
+
+header nav a{ 
+	z-index: 100;
+	text-decoration: none;
+	text-shadow: 1px 1px #991518;
+	font-family: 'Oswald', sans-serif;	
+	letter-spacing: 0.0625em;
+	font-size: 1em;
+	font-weight: normal;
+	margin-left: 15.625%; /*75px;*/
+	margin-right: 0px;
+}
+
+header nav a:hover {color: #e9761d;}
+header nav .shirts{margin-left: 0;}
+/*header nav .contact{margin-right: 20.833%;}*/ /*200px;}*/
+
+header nav .shirts::before, header nav .contact::before, header nav .search::before,header nav .cart::before {
+	font-family:icomoon;
+	color: #991518;
+	text-shadow: 0px 0px #991518;
+	position:absolute; 
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 2.5em;
+	speak: none;
+	font-weight: normal;
+	text-decoration:none;
+	top:-15px; 
+	left:-20px;
+	z-index: -1;
+}
+
+header nav .shirts::before{content: '\e60b'; }
+header nav .contact::before {content:'\e621';}
+header nav .search::before {content:'\e615';}
+header nav .cart::before {content:'\e609';}
+
+
+header nav .cart {
+	/*visibility: hidden;*/
+
+}
+
+/*header nav .cart{
+	position: relative;
+	font-size: 1em;
+	top: -20px;
+
+}
+
+header nav::before{
+
+
+	border-right: solid #991518 10px;
+	border-left: solid #991518 10px;
+	height:100px;
+	padding: 0 0.5em;
+	position: absolute;
+	top: -40px;
+
+
+}
+*/
+
+/*------------------------END HEADER STYLING-----------------------------
+-------------------------------------------------------------------------*/
+
+/*===============================================================================================================
+=================================================================================================================
+#################################################################################################################
+=================================================================================================================
+#################################################################################################################
+=================================================================================================================
+################################################################################################################*/
+
+/*------------------------BANNER STYLING---------------------------------
+-------------------------------------------------------------------------*/
+
+.banner{height: 300px;
+
+    /* ================Radial Gradient generated from http://www.colorzilla.com=============
+    ======================================================================================== */
+	background: #1e5799; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #1e5799 0%, #44d6ff 0%, #3aadcd 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#1e5799), color-stop(0%,#44d6ff), color-stop(100%,#3aadcd)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #1e5799 0%,#44d6ff 0%,#3aadcd 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #1e5799 0%,#44d6ff 0%,#3aadcd 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #1e5799 0%,#44d6ff 0%,#3aadcd 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #1e5799 0%,#44d6ff 0%,#3aadcd 100%); /* W3C */
+
+	/* ================Radial Gradient generated from http://www.colorzilla.com=============
+    ======================================================================================== */
+
+	border-bottom:  solid rgba(37, 112, 133, 1) 5px;
+	position:relative;
+	box-shadow: 1px 2px 2px black;
+}
+.banner .container{ height: 300px; position: relative;}
+.banner h2 {;}
+.banner #slogan{padding-top: 10px; margin-bottom: 0px; width:100%; height:100%;}
+.banner p {
+	position: absolute;
+	font-family: 'Lobster', sans-serif;
+	font-size: 3.75em;
+	letter-spacing: 1px;
+	font-weight: normal;
+	bottom: 0;
+	margin-left: 0; /*7.29166%; *//*70px;*/
+}
+
+.banner #girl { position: absolute; bottom: 0px; right: 0px;}
+#sunburst { position: absolute;width: 100%;max-height: 100%;min-height: 100%;}
+
+/*------------------------END BANNER STYLING-------------------------------
+-------------------------------------------------------------------------*/
+
+/*===============================================================================================================
+=================================================================================================================
+#################################################################################################################
+=================================================================================================================
+#################################################################################################################
+=================================================================================================================
+################################################################################################################*/
+
+
+/*------------------------FEATURED SHIRTS STYLING-------------------------------
+-------------------------------------------------------------------------*/
+.latest_shirts {height: 410px;}
+
+	/****************************SHIRTS BOX STYLING********************
+	******************************************************************/
+
+	ul.products {margin: 0; padding: 0; width: 100%;} /*960px*/
+	ul.products li {
+	    display: inline-block;
+	    list-style: none;
+	    border: 1px solid #e3e1e0;
+	    -webkit-border-radius: 3px;
+	    border-radius: 3px;
+	    width: 20.5%; /*198px*/
+	    text-align: center;
+	    text-transform: lowercase;
+	    padding: 1.40421%; /*14px;*/
+	    background: #f4f4f4;
+	    margin: 0 0 1.70511% 1.70511%; /*17px*/
+	    position: relative;
+	    left: 0px;
+	    box-shadow: inset 0px 1px 2px rgba(0,0,0,0.4);
+	    border-bottom: 2px solid white;
+	}
+
+	ul.products li:first-of-type
+	{
+		margin-left: 0px;
+	} 
+
+	ul.products li:nth-of-type(5)
+	{
+		margin-left: 0px;
+	} 
+
+	ul.products li a:hover:after {
+		font-family: icomoon;
+	    content:'\e61a';
+	    font-size: 1em; position: absolute; top: 15px; right: 25px; color: #f16702; vertical-align: top;    
+	}
+	ul.products li a {
+	    background: white;
+	    border: solid 1px #e3e1e0;
+	    display: block;
+	    padding: 10.2564% 0 5.1282%; /*20px 0 10px;*/
+	    text-decoration: none;
+	    color: #999;
+	    opacity: .9;
+	}
+	ul.products li a:hover {
+	    opacity: 1;
+	    color: #666;
+	}
+	ul.products li img {
+	    width: 87.18%; /*170px*/
+	    margin-bottom: 3.0769%; /*6px;*/
+	    border-radius: 10px;
+	}
+
+	ul.products li .sold {
+		position: absolute;
+		width: 97%; /*216px*/
+	    top:0;
+	    left:3px;
+	    padding-bottom: 90px; /*Hacky - cover clickable link*/
+	    border-radius: 0px;
+	    z-index: 30;
+	}
+	ul.products li p {
+	    width: auto;
+	    font-family: 'Oswald', sans-serif; 
+	}
+	/****************************END SHIRTS BOX STYLING***************
+	******************************************************************/
+/*------------------------END LATEST SHIRTS STYLING------------------------
+-------------------------------------------------------------------------*/
+
+/*===============================================================================================================
+=================================================================================================================
+#################################################################################################################
+=================================================================================================================
+#################################################################################################################
+=================================================================================================================
+################################################################################################################*/
+
+
+/*----------------------------FOOTER STYLING-----------------------------
+========================================================================*/
+.footer{background: #cacaca; border-top: #8f8f8f solid 10px;height: 4em;}
+.footer ul a, .footer p {color:#8f8f8f;}
+.footer ul{list-style: none;}
+.footer ul a{
+	font-family:icomoon;
+	font-size: 2em;
+	text-decoration: none;
+	padding-top: 5px;
+	float: left;
+	letter-spacing: 10px;
+}
+
+.footer ul a:hover {color: #e9761d;}
+.footer p {float: right;padding-top: 10px;}
+/*====================================================================
+-------------------------END FOOTER STYLING--------------------------*/
+
+/*===============================================================================================================
+=================================================================================================================
+#################################################################################################################
+=================================================================================================================
+#################################################################################################################
+=================================================================================================================
+################################################################################################################*/
+
+
+/*------------------------CONTACT PAGE STYLING------------------------
+--------------------------------------------------------------------*/
+
+.contact_page {height: auto; min-height: 400px;}
+
+form { clear:left; width: 375px; margin: 34px auto; font-family: 'Oswald', sans-serif; font-weight: normal}
+form tr {border: 1px solid #CCC;background: #f4f3f2;}
+form table {width: 375px; margin-bottom: 16px;}
+form th {width: 85px;border-right: 1px solid #CCC;vertical-align: middle;padding: 8px;}
+form td {padding: 15px 15px;}
+form td select,form td input,form td textarea {width: 100%;}
+form input[type="submit"] {
+    width: 375px;
+    text-align: center;
+    border: 1px solid #8e8e46;
+    
+    /*COLORZILL.COM GRADIENT GENERATOR*/
+    background: #3aadcd; /* Old browsers */
+	background: -moz-linear-gradient(top,  #3aadcd 0%, #54a3ee 50%, #3690f0 51%, #1e5799 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3aadcd), color-stop(50%,#54a3ee), color-stop(51%,#3690f0), color-stop(100%,#1e5799)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #3aadcd 0%,#54a3ee 50%,#3690f0 51%,#1e5799 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #3aadcd 0%,#54a3ee 50%,#3690f0 51%,#1e5799 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #3aadcd 0%,#54a3ee 50%,#3690f0 51%,#1e5799 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #3aadcd 0%,#54a3ee 50%,#3690f0 51%,#1e5799 100%); /* W3C */
+
+
+    color: #FFF;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;    
+    font-size: 0.875em;
+    text-transform: uppercase;
+    padding: 14px;
+}
+
+.contact_page p {
+	margin: 0 auto;
+    padding: 1em;
+    width: 375px;
+    position: relative;
+}
+
+.contact_page p.validated {
+    background: #97d09c;
+    border: 1px solid #009756;
+}
+
+
+.contact_page p.message {
+    background: #ffeca4;
+    border: 1px solid #f16702;
+}
+
+.contact_page p.validated::before {
+	font-family:icomoon;
+	color: #97d09c;
+	text-shadow: 0px 0px #991518;
+	position:absolute; 
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	top:7px; 
+	left:280px;
+	content:')';
+	font-size: 2em;
+}
+
+.contact_page p.message::before {
+	font-family:icomoon;
+	color: #f16702;
+	text-shadow: 0px 0px #991518;
+	position:absolute; 
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	top:7px; 
+	left:280px;
+	content:'.';
+	font-size: 2em;
+}
+/*------------------------END CONTACT FORM STYLING------------------------
+--------------------------------------------------------------------*/
+
+/*===============================================================================================================
+=================================================================================================================
+#################################################################################################################
+=================================================================================================================
+#################################################################################################################
+=================================================================================================================
+################################################################################################################*/
+
+/****************************SHIRT PAGE STYLING********************
+******************************************************************/
+.shirt_page{height: auto; min-height: 550px;}
+.shirt_page .container{height: 600px;}
+.shirt_page h1{text-align: left;}
+.shirt-details form, .shirt-details table {width: 100%;}
+.shirt-details input[type="submit"]{width: 100%;}
+.price {
+	/*display:block;*/
+	font-family: 'Oswald', sans-serif; 
+	font-size: 2em;
+	color: #e9761d;
+	text-align: left;
+	text-shadow: 0px 0px #fff;
+}
+.breadcrumb {
+    font-family: 'Oswald', sans-serif; 
+    font-size: 1em;
+    font-weight: normal;
+    padding: 14px 0 48px;
+}
+.breadcrumb a{
+    color: #3AADCD;
+    text-transform: uppercase;
+}
+.shirt-picture {
+    float: left;
+    width: 36.4583%; /*350px;*/
+    text-align: center;
+    border: 1px solid #d9d9d9;
+    padding: 14px;
+    background: #f4f4f4;    
+}
+.shirt-picture span {
+    background: white;
+    display: block;
+    width: 100%;
+    padding: 0px;
+    border: 1px solid #d9d9d9;
+}
+.shirt-picture img {width: 100%;}
+
+.shirt-details {
+    width: 47.916%; /*460px;*/
+    float: right;
+}
+.shirt-details form {
+    margin-left: 0;
+}
+
+/*===============================================================================================================
+=================================================================================================================
+#################################################################################################################
+=================================================================================================================
+#################################################################################################################
+=================================================================================================================
+################################################################################################################*/
+
+/****************************SEARCH PAGE STYLING********************
+******************************************************************/
+.search_page p {
+	text-align: center;
+	color: #555;
+}
+
+.search_page form input[type="text"] {
+	width: 320px;
+	height:50px;
+	border: 1px solid #8e8e46;
+	border-radius: 3px;    
+}
+.search_page form input[type="submit"] {
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+}
+
+
+/*===============================================================================================================
+=================================================================================================================
+#################################################################################################################
+=================================================================================================================
+#################################################################################################################
+=================================================================================================================
+################################################################################################################*/
+
+
+/****************************PAGINATION STYLING********************
+******************************************************************/
+.pagination {
+	margin-bottom: 0.5em;
+	position: relative;
+}
+
+
+.pagination a, .pagination span{
+
+    position: relative;
+	text-align: center;
+	padding: 0 0.75em;
+	text-decoration: none;
+	color: #555;
+	background-color: white;
+	border: solid gray 1px;
+	border-radius: 2px;
+}
+
+.pagination span{
+	background-color: lightgray;
+}
+
+
+
+@media (max-width: 899px) {
+	.banner, .banner .container {
+		height: 250px;
+	}
+
+	header nav a{ 
+		letter-spacing: 0.0625em;
+		font-size: 0.85em;
+		margin-left: 12%; /*75px;*/
+		margin-right: 0px;
+	}
+
+	header nav .shirts::before, header nav .contact::before, header nav .search::before,header nav .cart::before {
+		font-size: 2em;
+		top: -10px;
+		left: -10px;
+	}
+
+	header {
+		height: 70px; 
+	}
+	header .container{ height: 70px;}
+
+	header .container #logo {
+		width: 38.54166% ;
+		height:70px;
+	}
+
+	header .container #logo img {height: 70px;}
+
+	header nav {margin-top: 26px; width:50%; padding-right: 1%; margin-right: 0px;} 
+
+   .banner #girl { position: absolute; bottom: 0px; right: 10px; height:90%;}
+}
+
+
+/*@media (max-width: 645px) {
+	.banner, .banner .container {
+		height: 200px;
+	}
+
+	header nav a{font-size: 0.8em;}
+
+	header { }
+
+	header .container{ }
+
+	header .container #logo {
+		position: absolute;
+	}
+
+	header .container #logo img {visibility:hidden; position: absolute;}
+
+	header nav {
+		width:300px; 
+		padding-left: 0px;
+		float:none;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	} 
+
+/*	.banner, .banner *{
+		position: absolute;
+		visibility: none;
+	}
+
+	header nav::before{
+		content:url('../img/star_only.png');
+		position: absolute;
+		left: -60px;
+		top: -5px;
+	}
+
+   .banner #girl { visibility: hidden;}
+}
+*/
+
+
+
+

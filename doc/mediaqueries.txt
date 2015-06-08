@@ -1,0 +1,125 @@
+@media (max-width: 740px) {
+	header {
+		height: 200px;
+	}
+
+	header .container #logo{
+		position: relative;
+		margin: 0 auto;
+		border-bottom: dashed #991518 2px;
+	}
+
+	header .container nav*{
+		margin:0;
+		padding:0;
+	}
+
+	header .container nav{
+		float:none;
+		width:350px;
+		margin: 10px auto 0 auto;
+		padding: 20px 0px;
+	}
+
+	header .container nav a{
+		
+		padding: 0px 10px;
+	}
+
+	header nav .cart{
+		border:none;
+		font-size: 4em;
+		/*top:-45px;*/
+		margin-top: 27px;
+		position: absolute;
+		right: -20px;
+
+	}
+
+	header nav .shirts::before, header nav .contact::before {
+		left: 0px;
+	}
+
+	header nav .contact{margin-right: 100px;} /*200px;}*/
+
+}
+
+
+@media (max-width: 600px) {
+
+	.latest_shirts {height: auto;}
+
+	ul.products li:nth-of-type(3)
+	{
+		margin-left: 0px;
+	} 
+
+	ul.products li:nth-of-type(7)
+	{
+		margin-left: 0px;
+	} 
+	
+	ul.products li {
+	   
+	    width: 40%; /*198px*/
+	    padding: 14px;
+	    background: #f4f4f4;
+	    margin: 0 0 17px 5px; /*17px*/
+	
+	}
+
+	.banner, .banner .container {
+     	height: 200px;
+	 }
+}
+
+@media (max-width: 480px) {
+	.banner, .banner .container {
+     	height: 150px;
+	 }
+
+	 header {
+	 	height: 150px;
+	 }
+
+	 header .container #logo{
+		height:70%;
+		width: 100%;
+	}
+
+	header .container #logo img{
+		height:100%;
+	}
+
+}
+
+@media (max-width: 342px) {
+	.banner, .banner .container {
+     	visibility: hidden;
+     	height: 0px;
+	}
+
+	header .container nav a{
+		
+         margin-right: -20px;
+		padding: 0px 0px;
+	
+	}
+
+	header nav .cart{
+		right: 90px;
+
+	}
+
+	ul.products li {
+	   
+	   width: 85%; /*198px*/
+	  margin-left:0px;
+
+	
+	}
+
+
+	
+}
+
